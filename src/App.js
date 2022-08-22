@@ -1,5 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
+import PageWithTable from './pages/PageWithTable';
+
+import Utils from './shared/Utils';
 
 function App() {
   return (
@@ -25,6 +28,15 @@ function App() {
           <p>Lorem ipsum Proident irure magna dolore quis laboris deserunt ad aliquip non nostrud laborum sed et commodo ut elit cupidatat amet dolore est Ut aute et nulla dolore officia velit Ut ullamco id qui velit cupidatat dolore sed deserunt sed sed sit mollit labore esse laboris cupidatat Duis quis est ea mollit id nostrud Ut nostrud magna veniam cupidatat officia magna consectetur adipisicing sit exercitation est nisi ut fugiat exercitation non in dolor aute laborum anim incididunt commodo ut Duis cupidatat do in aliquip ea amet elit eiusmod ea nulla sed amet labore Duis incididunt do anim dolor culpa non aute cupidatat enim reprehenderit do eu esse commodo et dolor aliquip magna sint Excepteur deserunt dolore laboris magna occaecat non ea in proident voluptate nulla amet officia consequat Ut laboris irure non incididunt Ut eu id aliquip ea minim dolor nostrud ad labore incididunt ut in veniam sunt eiusmod est eiusmod anim sed ea pariatur id tempor commodo sint qui sit do Excepteur ut.</p>
           <p>Lorem ipsum In ea ullamco dolor magna et eiusmod nisi do commodo aliqua sit id ut sint eiusmod aliquip occaecat irure consectetur amet nisi amet aliquip commodo occaecat incididunt aliqua dolor id officia aliqua irure fugiat ullamco occaecat in Duis occaecat dolor labore ea cillum in commodo in magna et nulla ut incididunt eiusmod deserunt aliquip aute enim officia proident culpa officia minim magna nulla eiusmod mollit minim dolore ullamco adipisicing non anim Duis sint dolor consequat occaecat irure amet non aute proident in Ut Duis deserunt dolore do laborum id nulla minim id anim dolor nulla ad amet tempor sint ut adipisicing aliqua adipisicing in dolor sunt sunt in sint ad cupidatat elit dolor ullamco eiusmod voluptate eu nostrud aliqua exercitation dolor voluptate labore tempor aute velit laborum velit qui incididunt ullamco nisi laborum consectetur qui dolor laboris officia id ut aute consectetur nostrud aliqua dolore enim velit incididunt quis ea pariatur ut labore Excepteur minim reprehenderit velit magna pariatur ad magna dolore irure consectetur fugiat nostrud ut cupidatat aliqua consequat sit consectetur dolor in ut ullamco irure adipisicing est ad quis sit elit pariatur non elit fugiat aute ad minim ullamco sint minim laboris et occaecat laboris aliquip enim deserunt consequat ut ad commodo adipisicing cillum Excepteur eu ex commodo anim aliqua dolor laborum anim consequat nostrud irure cillum cillum voluptate sit anim veniam ut id et non ea aliqua cupidatat officia amet tempor occaecat et sit.</p>
           <p>Lorem ipsum Do dolor proident enim occaecat dolor esse non in sit dolore labore ad dolor deserunt qui ullamco dolor nisi anim non aliquip proident ut sed ad pariatur sit labore minim pariatur est ut incididunt nisi id veniam ut officia minim ex nulla culpa quis elit in id Duis adipisicing magna quis consectetur velit sunt aute ea pariatur reprehenderit dolor officia id deserunt id quis do culpa non minim consequat ad fugiat magna tempor eiusmod Duis anim elit deserunt deserunt id Duis qui tempor ad do aliqua nisi elit in dolor culpa nulla adipisicing dolore tempor sunt eiusmod voluptate eiusmod in dolore irure incididunt incididunt velit Duis sed non exercitation proident nostrud tempor Ut veniam enim aliquip ut eu dolore in mollit dolor ex laboris do amet laborum aute fugiat sed in officia aute ut est nulla Ut elit aliqua esse officia Ut eiusmod nisi officia pariatur elit aliquip labore.</p>
+        </details>
+
+        <details>
+          <summary>
+            Open to see a test Component
+          </summary>
+
+          <p>Current date is: {Utils.currDateAsYMDStr()}</p>
+          <PageWithTable />
         </details>
       </div>
 
