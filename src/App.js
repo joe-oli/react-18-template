@@ -5,12 +5,15 @@ import PageWithTable from './pages/PageWithTable';
 import Utils from './shared/Utils';
 
 function App() {
+
+
+
   return (
     <div className="App">
       {/* html,body are at 100%; 
       div.App is inside div.root, which is inside `body`; 
       so app should be at 100% - the navbar height (fixed) */}
-      <nav>
+      <nav className="App-nav">
         <div className="nav_title">App Title</div>
         <ul className="nav_list">
           <li className="nav_item">Services</li>
@@ -20,7 +23,7 @@ function App() {
       </nav>
 
       {/* content + footer are siblings, but together should total 100% - (nav-height) */}
-      <div className="content">
+      <div className="App-content">
           <p>Lorem ipsum Enim do velit exercitation fugiat cillum labore et dolore ad minim dolor amet tempor nisi sunt Excepteur voluptate laborum et Duis labore cupidatat officia laboris minim cupidatat sit ad incididunt dolor in nulla elit sint do sit aliqua eu ut irure commodo exercitation dolore consequat est laborum Duis in dolore esse est dolore voluptate amet fugiat cupidatat Duis proident consequat nostrud Excepteur ea minim nisi eiusmod sed amet irure id ut officia occaecat nisi elit velit qui aliquip adipisicing consequat adipisicing aute laboris do consectetur sit officia elit in tempor aute eiusmod nulla dolore non sint in fugiat adipisicing amet quis in velit sit sunt Duis culpa deserunt Duis sed elit veniam exercitation Ut pariatur magna et id esse dolor dolore aliquip et in cillum commodo commodo et quis veniam magna irure laborum commodo enim tempor dolore velit ut adipisicing consequat dolore enim sunt eiusmod irure aliquip Duis magna laboris non in aliquip magna dolor dolore nulla nisi proident cupidatat laboris eu commodo adipisicing adipisicing ut aliquip eu aute veniam sint magna mollit nostrud ut sed consectetur et tempor consequat nisi nostrud dolore et officia adipisicing labore id enim nisi reprehenderit sunt fugiat ea Ut dolore sed eu in id velit esse et est labore eiusmod culpa adipisicing quis ea consectetur ea fugiat in culpa magna do laboris.</p>
   
         <details>
@@ -41,7 +44,7 @@ function App() {
       </div>
 
 
-      <footer>
+      <footer className="App-footer">
         <p>&copy; Jolisoft International, 2022-</p>
       </footer>
     </div>

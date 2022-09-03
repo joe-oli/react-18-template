@@ -1,3 +1,6 @@
+/* Make the classes explicit, so if you add other styles later, it does not interfere with yours; 
+e.g. use .App-nav instead of just .App > nav; if you add Bootstrap later, your classes won't be affected by BS's nav defaults ! */
+
 .App {
   display: flex;
   flex-direction: column; /* default is row! */
@@ -8,17 +11,29 @@
 /* App contains div.content,footer element; 
   To make sticky footer, for sparse pages, want content to expand to use all height until footer at bottom 
 */
-.content {
+.App-content {
   flex: 1 0 auto; /* grow */
 }
-footer {
+.App-content {
+  margin: 0 auto;
+  /* max-width: 32em; */
+  /* max-width: 900px; */
+  max-width: calc(100vw - 100px);
+  padding: 3em 0; /*top,bottom; left,right*/
+}
+
+.App-footer {
   flex-shrink: 0;
   /* height: 40px; */
 }
+.App-footer {
+  text-align: center;
+  background-color: lightgrey;
+}
 
 
 
-nav {
+.App-nav {
   position: sticky;
   top: 0; /*threshold for stickyness - NONE */
   display: flex;
@@ -27,28 +42,13 @@ nav {
   align-items: center; /* vertically, think "middle" */
   height: 60px;
   
-}
-nav {
   background: #42A5F5;
 }
 
-.nav_title {
+.App-nav .nav_title {
   margin: 0px 30px;
 }
-.nav_item {
+.App-nav .nav_item {
   display: inline-block;
   margin: 0px 30px;
-}
-
-
-.content {
-  margin: 0 auto;
-  /* max-width: 32em; */
-  max-width: 900px;
-  padding: 3em 0; /*top,bottom; left,right*/
-}
-
-footer {
-  text-align: center;
-  background-color: lightgrey;
 }
